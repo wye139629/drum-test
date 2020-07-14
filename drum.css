@@ -1,0 +1,58 @@
+
+.bg{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+  }
+  .bg::after{
+    background-image: url(bgphoto.jpg);
+    background-size: cover;
+    content: "";
+    opacity: 0.9;
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
+   
+
+  }
+  .keynote{
+    display:flex;
+  }
+  .frame{
+    width:110px;
+    height:90px;
+    /* border:5px solid rgb(240, 204, 4); */
+    /* box-shadow: 0px 0px 15px rgb(240, 204, 4); */
+    border-radius:5%;
+    margin:0px 10px;
+  }
+  .rim{
+    width:110px;
+    height:90px;
+    border:5px solid black;
+    background-color: rgb(53, 50, 50);
+    opacity: 0.7;
+    box-sizing:border-box;
+    border-radius:5%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+  }
+  .text{
+    text-align:center;
+  }
+  .rim .key{
+    font-size:50px;
+    color: white;
+    font-weight: bold;
+  }
+  .text .sound{
+    color:rgb(218, 144, 8);
+    font-weight:bold;
+  }
